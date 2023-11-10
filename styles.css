@@ -62,7 +62,8 @@ body {
   /* Här är styling för bilden som ligger i about-me sektionen */
   
   .about-me img {
-    width: 180px;
+    width: 230px;
+    height: 200px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
