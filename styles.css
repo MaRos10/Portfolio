@@ -18,6 +18,11 @@ body {
     text-decoration: none;
     font-weight: 600;
   }
+
+  .button:hover {
+    background-color: #f3dfdf;
+    cursor: pointer;
+  }
   
   /* Här är styling som gäller för alla rubriker och texter */
   
@@ -90,6 +95,11 @@ body {
     border-radius: 2.5rem;
     text-decoration: none;
     font-weight: 450;
+  }
+
+  .greatness .button:hover {
+    background-color: #f28f8f;
+    cursor: pointer;
   }
   
   /* Här är styling för footern på sidan */
