@@ -8,6 +8,7 @@ import csharpLogo from "../../assets/csharp.svg";
 import gitLogo from "../../assets/git.svg";
 import githubLogo from "../../assets/github.png";
 import scrumLogo from "../../assets/scrum.svg";
+import awsLogo from "../../assets/aws.svg";
 
 const Experience = () => (
   <section id="experience">
@@ -54,12 +55,7 @@ const Experience = () => (
                 <h3 className="tech-title">Figma</h3>
               </div>
             </article>
-            <article>
-              <img src={csharpLogo} alt="C-sharp" className="icon" />
-              <div>
-                <h3 className="tech-title">C#</h3>
-              </div>
-            </article>
+
             <article>
               <img src={gitLogo} alt="Git" className="icon" />
               <div>
@@ -76,6 +72,18 @@ const Experience = () => (
               <img src={scrumLogo} alt="Scrum" className="icon" />
               <div>
                 <h3 className="tech-title">Scrum</h3>
+              </div>
+            </article>
+            <article>
+              <img src={awsLogo} alt="AWS" className="icon" />
+              <div>
+                <h3 className="tech-title">AWS</h3>
+              </div>
+            </article>
+            <article>
+              <img src={csharpLogo} alt="C-sharp" className="icon" />
+              <div>
+                <h3 className="tech-title">C#</h3>
               </div>
             </article>
           </div>

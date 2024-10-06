@@ -15,18 +15,18 @@ const About = () => (
             <img src={experienceIkon} alt="experience icon" className="icon" />
             <h3>Avklarade kurser</h3> <br />
             <p className="subjects">
-              - Introduktion till IT-branschen och frontendutveckling <br /> -
+              - Introduktion till IT-branschen & frontendutveckling <br /> -
               UX/UI grunder <br /> - HTML & CSS <br />
-              - Introduktion till programmering och datalogiskt tänkande <br />
+              - Introduktion till programmering & datalogiskt tänkande <br />
               - JavaScript med ES6+ <br /> - Arbeta agilt <br />-
-              Frontend-ramverk <br />- Backend med Node.js
+              Frontend-ramverk, React <br />- Backend med Node.js <br /> -
+              Utvecklingsmiljöer & driftsättning i AWS
             </p>
           </div>
           <div className="details-container">
             <img src={educationIcon} alt="education icon" className="icon" />
             <h3>Kommande kurser</h3> <br />
             <p className="subjects">
-              - Utvecklingsmiljöer och driftsättning <br />
               - UX/UI fördjupning <br /> - Fullstack webbapplikation <br /> -
               Lärande i arbete (LIA) 1 <br /> - Examensarbete <br /> - Lärande i
               arbete (LIA) 2
