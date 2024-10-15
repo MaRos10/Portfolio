@@ -9,6 +9,7 @@ import gitLogo from "../../assets/git.svg";
 import githubLogo from "../../assets/github.png";
 import scrumLogo from "../../assets/scrum.svg";
 import awsLogo from "../../assets/aws.svg";
+import arrow from "../../assets/arrow.png";
 
 const Experience = () => (
   <section id="experience">
@@ -17,7 +18,6 @@ const Experience = () => (
     <div className="experience-details-container">
       <div className="about-containers">
         <div className="details-container">
-          {/* <h2 className="experience-sub-title">Techstack</h2> */}
           <div className="article-container">
             <article>
               <img src={htmlLogo} alt="HTML" className="icon" />
@@ -91,7 +91,7 @@ const Experience = () => (
       </div>
     </div>
     <img
-      src="src/assets/arrow.png"
+      src={arrow}
       alt="arrow icon"
       className="icon arrow"
       onClick={() => (window.location.href = "./#projects")}

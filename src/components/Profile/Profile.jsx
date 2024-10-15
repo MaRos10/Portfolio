@@ -1,6 +1,7 @@
 import linkedinLogo from "../../assets/linkedin.png";
 import githubLogo from "../../assets/github.png";
 import profileImg from "../../assets/profilepic.jpg";
+import cvFile from "../../assets/CV.pdf";
 
 const Profile = () => (
   <section id="profile">
@@ -16,10 +17,7 @@ const Profile = () => (
         min techstack och några av mina projekt
       </p>
       <div className="btn-container">
-        <button
-          className="btn btn-color-2"
-          onClick={() => window.open("src/assets/CV.pdf")}
-        >
+        <button className="btn btn-color-2" onClick={() => window.open(cvFile)}>
           Ladda ner CV
         </button>
         <button

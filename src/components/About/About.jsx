@@ -1,6 +1,7 @@
 import experienceIkon from "../../assets/experience.png";
 import educationIcon from "../../assets/education.png";
 import officePic from "../../assets/sarah-dorweiler-qddLJnd51bU-unsplash.jpg";
+import arrow from "../../assets/arrow.png";
 
 const About = () => (
   <section id="about">
@@ -35,7 +36,7 @@ const About = () => (
         </div>
       </div>
       <img
-        src="src/assets/arrow.png"
+        src={arrow}
         alt="arrow icon"
         className="icon arrow"
         onClick={() => (window.location.href = "./#experience")}

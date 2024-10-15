@@ -1,6 +1,7 @@
 import sportwebsite from "../../assets/sportwebsite.png";
 import solaris from "../../assets/solaris.png";
 import memory from "../../assets/memory.png";
+import arrow from "../../assets/arrow.png";
 
 const Projects = () => (
   <section id="projects">
@@ -126,7 +127,7 @@ const Projects = () => (
 
     {/* Arrow Icon */}
     <img
-      src="src/assets/arrow.png"
+      src={arrow}
       alt="arrow icon"
       className="icon arrow"
       onClick={() => (window.location.href = "./#contact")}
