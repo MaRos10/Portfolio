@@ -25,7 +25,11 @@ const Contact = () => (
           className="icon contact-icon"
         />
         <p>
-          <a href="https://se.linkedin.com/in/marina-rosenstiel-875bb7152">
+          <a
+            href="https://se.linkedin.com/in/marina-rosenstiel-875bb7152"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
         </p>
