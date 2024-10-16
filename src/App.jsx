@@ -43,46 +43,6 @@ function App() {
         <Contact />
       </motion.div>
 
-      {/*       <motion.section
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <Profile />
-      </motion.section>
-
-      <motion.div
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <About />
-      </motion.div>
-
-      <motion.div
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <Experience />
-      </motion.div>
-
-      <motion.div
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <Projects />
-      </motion.div>
-
-      <motion.div
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-      >
-        <Contact />
-      </motion.div> */}
-
       <Footer />
     </div>
   );
