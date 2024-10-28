@@ -21,16 +21,15 @@ const About = () => (
               - Introduktion till programmering & datalogiskt tänkande <br />
               - JavaScript med ES6+ <br /> - Arbeta agilt <br />-
               Frontend-ramverk, React <br />- Backend med Node.js <br /> -
-              Utvecklingsmiljöer & driftsättning i AWS
+              Utvecklingsmiljöer & driftsättning i AWS <br />- UX/UI fördjupning
             </p>
           </div>
           <div className="details-container">
             <img src={educationIcon} alt="education icon" className="icon" />
             <h3>Kommande kurser</h3> <br />
             <p className="subjects">
-              - UX/UI fördjupning <br /> - Fullstack webbapplikation <br /> -
-              Lärande i arbete (LIA) 1 <br /> - Examensarbete <br /> - Lärande i
-              arbete (LIA) 2
+              - Fullstack webbapplikation <br /> - Lärande i arbete (LIA) 1{" "}
+              <br /> - Examensarbete <br /> - Lärande i arbete (LIA) 2
             </p>
           </div>
         </div>
