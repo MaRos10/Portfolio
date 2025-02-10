@@ -8,6 +8,7 @@ import csharpLogo from "../../assets/csharp.svg";
 import gitLogo from "../../assets/git.svg";
 import githubLogo from "../../assets/github.png";
 import scrumLogo from "../../assets/scrum.svg";
+import typescriptlogo from "../../assets/typescript.svg";
 import awsLogo from "../../assets/aws.svg";
 import arrow from "../../assets/arrow.png";
 
@@ -41,6 +42,12 @@ const Experience = () => (
               <img src={reactLogo} alt="React" className="icon" />
               <div>
                 <h3 className="tech-title">React </h3>
+              </div>
+            </article>
+            <article>
+              <img src={typescriptlogo} alt="Typescript" className="icon" />
+              <div>
+                <h3 className="tech-title">Typescript</h3>
               </div>
             </article>
             <article>
