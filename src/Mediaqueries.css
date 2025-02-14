@@ -124,6 +124,41 @@
     font-size: 1rem;
     font-weight: 200;
   }
+
+  /* Projects */
+  .projects-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 10px;
+    padding: 0 10px;
+    width: 100%;
+    scrollbar-width: none;
+  }
+
+  .projects-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .details-container {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    margin-top: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 375px) {
