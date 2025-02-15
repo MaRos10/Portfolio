@@ -458,6 +458,11 @@ article .icon {
   transform: translate(-5px, -50%);
 }
 
+.scroll-btn.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .left {
   left: 5px;
 }

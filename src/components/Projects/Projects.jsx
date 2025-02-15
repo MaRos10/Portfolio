@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import sportwebsite from "../../assets/sportwebsite.png";
 import solaris from "../../assets/solaris.png";
 import memory from "../../assets/memory.png";
@@ -8,6 +8,37 @@ import arrow from "../../assets/arrow.png";
 
 const Projects = () => {
   const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+  useEffect(() => {
+    const checkScroll = () => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        setCanScrollLeft(scrollLeft > 0);
+        setCanScrollRight(scrollLeft + clientWidth < scrollWidth);
+      }
+    };
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    if (scrollRef.current) {
+      scrollRef.current.addEventListener("scroll", checkScroll);
+      checkScroll();
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      if (scrollRef.current) {
+        scrollRef.current.removeEventListener("scroll", checkScroll);
+      }
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -26,12 +57,17 @@ const Projects = () => {
       <p className="section__text__p1">
         <br /> Klicka på bilden för att läsa mer
       </p>
-
-      {/* Scrollbar */}
+      {isMobile && <p className="swipe-hint"> och svep för att bläddra 👆🏼</p>}
       <div className="projects-wrapper">
-        <button className="scroll-btn left" onClick={() => scroll("left")}>
-          &lt;
-        </button>
+        {!isMobile && (
+          <button
+            className={`scroll-btn left ${!canScrollLeft ? "disabled" : ""}`}
+            onClick={() => scroll("left")}
+            disabled={!canScrollLeft}
+          >
+            &lt;
+          </button>
+        )}
 
         <div className="projects-container" ref={scrollRef}>
           {[
@@ -108,12 +144,16 @@ const Projects = () => {
           ))}
         </div>
 
-        <button className="scroll-btn right" onClick={() => scroll("right")}>
-          &gt;
-        </button>
+        {!isMobile && (
+          <button
+            className={`scroll-btn right ${!canScrollRight ? "disabled" : ""}`}
+            onClick={() => scroll("right")}
+            disabled={!canScrollRight}
+          >
+            &gt;
+          </button>
+        )}
       </div>
-
-      {/* Arrow Icon */}
       <img
         src={arrow}
         alt="arrow icon"

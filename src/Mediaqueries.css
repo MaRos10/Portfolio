@@ -159,6 +159,16 @@
     margin: auto;
     display: block;
   }
+
+  .scroll-btn {
+    display: none;
+  }
+
+  .swipe-hint {
+    padding: 1.5rem 0rem 1rem 0rem;
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 375px) {
