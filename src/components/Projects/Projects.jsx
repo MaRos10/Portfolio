@@ -4,6 +4,7 @@ import solaris from "../../assets/solaris.png";
 import memory from "../../assets/memory.png";
 import timerapp from "../../assets/timerapp.png";
 import pinboard from "../../assets/pinboard.png";
+import illusite from "../../assets/illusite.png";
 import arrow from "../../assets/arrow.png";
 
 const Projects = () => {
@@ -72,40 +73,47 @@ const Projects = () => {
         <div className="projects-container" ref={scrollRef}>
           {[
             {
-              img: pinboard,
-              title: "Pinboard",
-              github: "https://github.com/MaRos10/Shui",
-              demo: "http://shui-pinboard.s3-website.eu-north-1.amazonaws.com/",
-              desc: "En anslagstavla byggd med React och ett serverless API i AWS. Användare kan posta, ändra och se meddelanden. Frontend hostad i en S3-bucket och backend byggd med API Gateway, Lambda och DynamoDB.",
+              img: illusite,
+              title: "Illusite",
+              github: "https://github.com/MaRos10/Illusite",
+              demo: "https://maros10.github.io/Illusite/",
+              desc: "En webbplats för ett fiktivt illustratörsföretag, byggd med React och modern responsiv design. Innehåller en landingvy, en sektion för tjänster, en FAQ-sektion och ett kontaktformulär.",
             },
             {
               img: timerapp,
               title: "Timer App",
               github: "https://github.com/MaRos10/IntervalApp",
               demo: "https://maros10.github.io/IntervalApp/",
-              desc: "Timer App där användare kan starta timer, ställa in intervaller, ta pauser och växla mellan analog, digital och textvy.",
+              desc: "Timer App, byggd för mobil, där användare kan starta timer, ställa in intervaller, ta pauser och växla mellan analog, digital och textvy.",
             },
             {
+              img: pinboard,
+              title: "Pinboard",
+              github: "https://github.com/MaRos10/Shui",
+              demo: "http://shui-pinboard.s3-website.eu-north-1.amazonaws.com/",
+              desc: "En anslagstavla byggd med React och ett serverless API i AWS. Användare kan posta, ändra och ta bort meddelanden. Frontend hostad i en S3-bucket och backend byggd med API Gateway, Lambda och DynamoDB.",
+            },
+            /*             {
               img: solaris,
               title: "Solaris",
               github: "https://github.com/MaRos10/Solaris",
               demo: "https://maros10.github.io/Solaris/",
               desc: "En webbsida om solsystemet där datan hämtas via API och användaren kan få info om planeter.",
-            },
+            }, */
             {
               img: memory,
               title: "Memory",
               github: "https://github.com/MaRos10/Memory",
               demo: "https://maros10.github.io/Memory/",
-              desc: "Ett memoryspel med fruktmotiv där kort blandas med Fisher-Yates-algoritmen.",
+              desc: "Ett memoryspel med fruktmotiv där kort blandas med Fisher-Yates-algoritmen. Ett av de första projekten med Javascript som jag byggde.",
             },
-            {
+            /*             {
               img: sportwebsite,
               title: "Sport Website",
               github: "https://github.com/MaRos10/Sport-Website",
               demo: "https://maros10.github.io/Sport-Website/",
               desc: "Hemsida för fiktiv idrottsförening med interaktiv matchkalender, bildkarusell och karta.",
-            },
+            }, */
           ].map((project, index) => (
             <div key={index} className="details-container color-container">
               <div
