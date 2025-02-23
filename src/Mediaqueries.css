@@ -178,9 +178,3 @@
     font-size: 0.85rem;
   }
 }
-
-@media screen and (max-width: 1024px) {
-  .section__pic-container img {
-    margin-left: 2rem;
-  }
-}
