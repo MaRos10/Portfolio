@@ -18,7 +18,7 @@ const Profile = () => (
       </p>
       <div className="btn-container">
         <button className="btn btn-color-2" onClick={() => window.open(cvFile)}>
-          Ladda ner CV
+          CV
         </button>
         <button
           className="btn btn-color-1"

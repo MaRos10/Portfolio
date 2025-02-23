@@ -54,7 +54,7 @@ a {
 a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 1rem; /* avstånd */
+  text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -125,7 +125,7 @@ a:hover {
   transition: max-height 0.6s ease-in-out;
 }
 
-/* Gör att länkarna glider in en efter en */
+/* Ham.menu item slide in */
 .menu-links.open li:nth-child(1) a {
   transition-delay: 0.1s;
   transform: translateX(0);
@@ -403,6 +403,7 @@ article .icon {
 }
 
 /* Projects section */
+
 .projects-wrapper {
   display: flex;
   align-items: center;
@@ -436,7 +437,6 @@ article .icon {
 }
 
 .scroll-btn {
-  /* background: rgba(0, 0, 0, 0.2); */
   color: rgb(117, 117, 120);
   border: none;
   font-size: 2rem;
@@ -543,7 +543,8 @@ article .icon {
   font-weight: 200;
 }
 
-/* Centrerar elementen i containern */
+/* Centering elements in container */
+
 .details-container {
   display: flex;
   flex-direction: column;

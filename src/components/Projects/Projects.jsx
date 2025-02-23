@@ -91,7 +91,7 @@ const Projects = () => {
               title: "Pinboard",
               github: "https://github.com/MaRos10/Shui",
               demo: "http://shui-pinboard.s3-website.eu-north-1.amazonaws.com/",
-              desc: "En anslagstavla byggd med React och ett serverless API i AWS. Användare kan posta, ändra och ta bort meddelanden. Frontend hostad i en S3-bucket och backend byggd med API Gateway, Lambda och DynamoDB.",
+              desc: "En anslagstavla, för mobil, byggd med React och ett serverless API i AWS. Användare kan posta, ändra och ta bort meddelanden. Frontend hostad i en S3-bucket och backend byggd med API Gateway, Lambda och DynamoDB.",
             },
             /*             {
               img: solaris,
